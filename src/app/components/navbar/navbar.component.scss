@@ -1,0 +1,48 @@
+.nav{
+    display: flex;
+    height: 4rem;
+    justify-content: flex-end;
+    background-color: rgb(46, 46, 78);
+    color: white;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+}
+.nav-name{
+    margin-right: auto;
+    padding-left: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+.home{
+    padding-left: 7.5rem;
+    font-weight: bold;
+    a{
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+
+.logout{
+    padding-left: 20px;
+    padding-right: 5px;
+    font-weight: bold;
+    a{
+        cursor: pointer;
+    }
+}
+
+
+.profile{
+    font-weight: bold;
+    padding-left:20px ;
+    a{
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+    }
+}

@@ -1,0 +1,14 @@
+<div class="nav">
+        <div class="nav-name">
+            Angular_Auth
+        </div>
+        <div class="home">
+            <a [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a>
+        </div>
+        <div class="profile">
+            <a  [routerLink]="['/profile']" routerLinkActive="router-link-active" >Profile</a>
+        </div>
+        <div class="logout">
+            <a (click)="onLogoutClick()" >Logout</a>
+        </div>
+</div>

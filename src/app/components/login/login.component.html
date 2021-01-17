@@ -1,0 +1,32 @@
+
+<div class="main-container">
+        <h1>SIGN IN</h1>
+        <div *ngIf="error" class="alert alert-danger" role="alert">
+            {{ error }}
+          </div>
+    <div class="form-container">
+        <form (ngSubmit)="login()">
+            <div class="input-field">
+                <mat-form-field appearance="outline">
+                    <mat-label>UserName</mat-label>
+                    <input matInput name="username" [(ngModel)]="username" placeholder="Enter your UserName">
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                </mat-form-field>
+            </div>
+            <div class="input-field">
+                <mat-form-field appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput name="password" [(ngModel)]="password"  placeholder="Enter your Password" type="password">
+                    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                </mat-form-field>
+            </div>
+            <div class="input-field">
+                <button mat-button color="primary">Sign In</button>
+            </div>
+            <div class="input-field">Don't have an account? <a [routerLink]="['/register']" routerLinkActive="router-link-active" >
+                Sign Up</a>
+            </div>
+        </form>
+    </div>
+</div>
+

@@ -1,0 +1,20 @@
+.container-body{
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    color: rgb(52, 72, 184);
+    font-weight: bold;
+    text-shadow: 2px 5px 5px 0px black;
+}
+.grid{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.grid-block{
+    display: block;
+    background-color: rgb(220, 230, 238);
+    box-shadow: 5px 20px 5px 5px rgb(67, 67, 70);
+    text-align: center;
+}

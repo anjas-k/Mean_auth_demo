@@ -1,0 +1,42 @@
+<div class="main-container">
+    <h1>SIGN UP</h1>
+    <div *ngIf="error" class="alert alert-danger" role="alert">
+        {{ error }}
+      </div>
+<div class="form-container">
+    <form (submit)="Register()">
+        <div class="input-field">
+            <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input matInput [(ngModel)]="name" name="name" placeholder="Enter your Name">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </mat-form-field>
+        </div>
+        <div class="input-field">
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput [(ngModel)]="email" name="email"  placeholder="Enter your Email">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </mat-form-field>
+        </div>
+        <div class="input-field">
+            <mat-form-field appearance="outline">
+                <mat-label>UserName</mat-label>
+                <input matInput [(ngModel)]="username" name="username"  placeholder="Enter your UserName">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </mat-form-field>
+        </div>
+        <div class="input-field">
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput [(ngModel)]="password" name="password" placeholder="Enter your Password" type="password">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </mat-form-field>
+        </div>
+        <div class="input-field">
+            <button mat-button color="primary" style="background-color: lightgray;">Sign Up</button>
+        </div>
+
+    </form>
+</div>
+</div>
